@@ -1,26 +1,28 @@
+# x-ui được việt hoa bởi Trạm Sách 
+
 # x-ui
-支持多协议多用户的 xray 面板
+xray panel with multi-protocol multi-user support
 
-# 功能介绍
-- 系统状态监控
-- 支持多用户多协议，网页可视化操作
-- 支持的协议：vmess、vless、trojan、shadowsocks、dokodemo-door、socks、http
-- 支持配置更多传输配置
-- 流量统计，限制流量，限制到期时间
-- 可自定义 xray 配置模板
-- 支持 https 访问面板（自备域名 + ssl 证书）
-- 更多高级配置项，详见面板
+# Features
+- System status monitoring
+- Support multi-user multi-protocol, web page visualization operation
+- Supported protocols: vmess, vless, trojan, shadowsocks, dokodemo-door, socks, http
+- Support to configure more transmission configurations
+- Traffic statistics, limit traffic, limit expiration time
+- Customizable xray configuration templates
+- Support https access panel (bring your own domain name + ssl certificate)
+- For more advanced configuration items, see the panel for details
 
-# 安装&升级
+# Instal and Update
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/tramsach/x-ui/main/install.sh)
 ```
 
-## 手动安装&升级
-1. 首先从 https://github.com/vaxilu/x-ui/releases 下载最新的压缩包，一般选择`amd64`架构
-2. 然后将这个压缩包上传到服务器的`/root/`目录下，并使用`root`用户登录服务器
+## Manual install & upgrade
+1. First download the latest compressed package from https://github.com/vaxilu/x-ui/releases, generally choose `amd64` architecture
+2. Then upload the compressed package to the `/root/` directory of the server, and use the `root` user to log in to the server
 
-> 如果你的服务器 cpu 架构不是`amd64`，自行将命令中的`amd64`替换为其他架构
+> If your server cpu architecture is not `amd64`, replace `amd64` in the command with another architecture
 
 ```
 cd /root/
