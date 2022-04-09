@@ -136,7 +136,7 @@ install_x-ui() {
     cd x-ui
     chmod +x x-ui bin/xray-linux-${arch}
     cp -f x-ui.service /etc/systemd/system/
-    wget --no-check-certificate -O /usr/bin/x-ui https://raw.githubusercontent.com/vaxilu/x-ui/main/x-ui.sh
+    wget --no-check-certificate -O /usr/bin/x-ui https://raw.githubusercontent.com/tramsach/x-ui/main/x-ui.sh
     chmod +x /usr/local/x-ui/x-ui.sh
     chmod +x /usr/bin/x-ui
     config_after_install
@@ -165,7 +165,7 @@ install_x-ui() {
     echo -e "x-ui restart      - Khởi động lại bảng điều khiển x-ui"
     echo -e "x-ui status       - Xem trạng thái x-ui"
     echo -e "x-ui enable       - Đặt x-ui tự động khởi động"
-    echo -e"x-ui disable      - Hủy x-ui tự khởi động"
+    echo -e "x-ui disable      - Hủy x-ui tự khởi động"
     echo -e "x-ui log          - Xem nhật ký x-ui"
     echo -e "x-ui v2-ui        - Di chuyển dữ liệu tài khoản từ bản v2-ui sang x-ui"
     echo -e "x-ui update       - Cập nhật bảng điều khiển x-ui"

@@ -94,7 +94,7 @@ before_show_menu() {
 }
 
 install() {
-    bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/tramsach/x-ui/main/x-ui.sh)
     if [[ $? == 0 ]]; then
         if [[ $# == 0 ]]; then
             start
@@ -113,7 +113,7 @@ update() {
         fi
         return 0
     fi
-    bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/tramsach/x-ui/main/x-ui.sh)
     if [[ $? == 0 ]]; then
         LOGI "Cập nhật hoàn tất và bảng điều khiển đã được tự động khởi động lại "
         exit 0
@@ -293,7 +293,7 @@ install_bbr() {
 }
 
 update_shell() {
-    wget -O /usr/bin/x-ui -N --no-check-certificate https://github.com/vaxilu/x-ui/raw/master/x-ui.sh
+    wget -O /usr/bin/x-ui -N --no-check-certificate https://raw.githubusercontent.com/tramsach/x-ui/main/x-ui.sh
     if [[ $? != 0 ]]; then
         echo ""
         LOGE "Không thể tải xuống tập lệnh, vui lòng kiểm tra xem máy có thể kết nối với Github hay không!"
